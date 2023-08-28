@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+    <h2>Cadastro de Usuário</h2>
+    <form action="processar_formulario.php" method="post">
+        
+        <input type="text" id="nome" name="nome" required placeholder="Nome"><br><br>
+
+        
+        <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+
+        <input type="submit" class="btn" id="btn" value="Cadastrar">
+    </form>
+</div>
+</body>
+<style>
+    * {
+margin: 0;
+top: 0;
+    }
+
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    body{
+        background-color: darkgrey;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    input{
+        border: none;
+        width: 100%;
+        height: 20%;
+    margin-top: 30px;
+    }
+.btn{
+background: #fff;
+border: none;
+border-radius: 50px;
+text-transform: uppercase;
+padding: 12px;
+min-width: 100%;
+cursor: pointer;
+transition-duration: .5s;
+}
+
+.btn:hover{
+    color: aliceblue;
+    background-color: #000;
+    box-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000;
+}
+
+
+
+</style>
+</html>
